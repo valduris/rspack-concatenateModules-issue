@@ -1,0 +1,14 @@
+{
+  "name": "rspack-concat-modules-css-exports-bug",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal repro: optimization.concatenateModules drops the __webpack_require__.r(exports) interop call for css/module (exportType: \"link\") sources - only under rspack, not webpack",
+  "type": "module",
+  "scripts": {
+    "repro": "node build.mjs"
+  },
+  "dependencies": {
+    "@rspack/core": "2.2.2",
+    "webpack": "5.108.4"
+  }
+}
